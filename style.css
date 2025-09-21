@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(90deg, #2b5876, #4e4376);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.story-section {
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+    min-height: 100vh;
+}
+
+.story-section.reverse {
+    text-align: left;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.story-section h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.story-section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+footer {
+    background-color: #4e4376;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .overlay {
+        padding: 20px;
+    }
+}
