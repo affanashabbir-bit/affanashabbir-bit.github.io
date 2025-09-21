@@ -1,103 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayesha Sheikh: Life Story</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ayesha Sheikh: Life Story</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  body {font-family: 'Lora', serif;}
+  #content {display:none;}
+</style>
+<script>
+  function askPassword() {
+    let pwd = prompt("Please enter the password:");
+    if (pwd === "Password1!") {
+      document.getElementById("content").style.display = "block";
+    } else {
+      alert("Incorrect password. Access denied.");
+      window.location.href = "https://github.com"; // Redirect if wrong
+    }
+  }
+  window.onload = askPassword;
+</script>
 </head>
 <body>
-
-<header>
+<div id="content">
+  <header>
     <div class="header-content">
-        <h1>Ayesha Sheikh</h1>
-        <p>A Journey of Resilience and Growth</p>
+      <h1>Ayesha Sheikh</h1>
+      <p>A Journey of Resilience and Growth</p>
     </div>
-</header>
+  </header>
 
-<main>
-    <!-- Early Life in Saudi Arabia -->
+  <main>
     <section class="story-section" style="background-image: url('https://images.unsplash.com/photo-1567899378491-2b8c9b8dc36f?fit=crop&w=1350&q=80');">
-        <div class="overlay fade-in">
-            <h2>Early Life in Saudi Arabia</h2>
-            <p>Ayesha Sheikh was born in Pakistan but spent her early childhood in Saudi Arabia, where life was highly structured and conservative. Her father worked while her mother cared for the children, and daily routines centered around school and family. She vividly remembers waiting for her father to go outside, as outdoor activities were highly restricted for girls. Simple pleasures, like ice cream trips, became treasured family moments. School was strict, emphasizing respect, discipline, and modesty. Though sheltered, these experiences cultivated patience and resilience. Her early years shaped her confidence and adaptability for future challenges.</p>
-        </div>
+      <div class="overlay fade-in">
+        <h2>Early Life in Saudi Arabia</h2>
+        <p>Ayesha Sheikh was born in Pakistan but spent her early childhood in Saudi Arabia, ...</p>
+      </div>
     </section>
-
-    <!-- Migration to Pakistan -->
     <section class="story-section reverse" style="background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?fit=crop&w=1350&q=80');">
-        <div class="overlay fade-in">
-            <h2>Migration to Pakistan</h2>
-            <p>In the early 1990s, during the Gulf War, Ayesha’s family had to leave Saudi Arabia urgently due to missile attacks near their home. They moved to Pakistan for safety, adjusting to a hotter climate and different school system. While the religion and language were familiar, cultural and educational differences challenged the family. The sudden relocation demanded flexibility, courage, and adaptability from young Ayesha. Even the brief stay taught her resilience and the importance of remaining calm under pressure. This period reinforced her independence and ability to handle change. The experiences left a lasting impression on her character and outlook.</p>
-        </div>
+      <div class="overlay fade-in">
+        <h2>Migration to Pakistan</h2>
+        <p>In the early 1990s, during the Gulf War, Ayesha’s family had to leave Saudi Arabia ...</p>
+      </div>
     </section>
-
-    <!-- Journey to the United States -->
     <section class="story-section" style="background-image: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?fit=crop&w=1350&q=80');">
-        <div class="overlay fade-in">
-            <h2>Journey to the United States</h2>
-            <p>In 2000, Ayesha’s family moved to the United States seeking better educational and professional opportunities. The transition was overwhelming: a new culture, neighborhoods, and school system were entirely different from her past experiences. Making friends was initially difficult due to her accent, clothing, and background. Over time, she adapted, gained confidence, and learned to navigate the interactive American education system. This period marked a major turning point, broadening her perspective and independence. She discovered resilience and self-reliance she didn’t know she had. The journey highlighted her ability to embrace new opportunities and thrive in unfamiliar environments.</p>
-        </div>
+      <div class="overlay fade-in">
+        <h2>Journey to the United States</h2>
+        <p>In 2000, Ayesha’s family moved to the United States seeking better educational ...</p>
+      </div>
     </section>
-
-    <!-- Career and Personal Growth -->
     <section class="story-section reverse" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?fit=crop&w=1350&q=80');">
-        <div class="overlay fade-in">
-            <h2>Career and Personal Growth</h2>
-            <p>Once settled in the United States, Ayesha pursued a career in teaching, embracing independence and professional growth. She learned to communicate effectively, lead others, and adapt to new academic and social environments. Although her first dream was to become a doctor in Pakistan, she found fulfillment in teaching and mentoring others. Stepping outside her comfort zone strengthened her empathy, confidence, and resilience. Her experiences illustrate that growth comes from embracing change while staying true to one’s roots. Today, she is proud of her achievements and the positive impact she has on others. Her journey reflects the power of determination and adaptability.</p>
-        </div>
+      <div class="overlay fade-in">
+        <h2>Career and Personal Growth</h2>
+        <p>Once settled in the United States, Ayesha pursued a career in teaching ...</p>
+      </div>
     </section>
-
-    <!-- Advice and Reflection -->
     <section class="story-section" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=1350&q=80');">
-        <div class="overlay fade-in">
-            <h2>Advice and Reflection</h2>
-            <p>Ayesha encourages anyone facing major life changes to remain open-minded and adaptable. Moving to a new country or adjusting to a different culture can be intimidating, but every challenge provides valuable lessons. She emphasizes staying connected to one’s roots through traditions, language, and values, while embracing new opportunities for growth. Her experiences show that resilience, courage, and curiosity can transform challenges into opportunities. By learning from new environments and people, one can grow both personally and professionally. She hopes her story inspires others to embrace change while honoring their heritage. Her journey highlights the importance of balance between roots and growth.</p>
-        </div>
+      <div class="overlay fade-in">
+        <h2>Advice and Reflection</h2>
+        <p>Ayesha encourages anyone facing major life changes to remain open-minded ...</p>
+      </div>
     </section>
-
-    <!-- Sources -->
     <section class="story-section reverse" style="background-color: #f7f7f7; color: #333;">
-        <div class="overlay fade-in">
-            <h2>Sources</h2>
-            <p>1. Interview with Ayesha Sheikh conducted by Aisha Sheik.<br>
-            2. Historical context: Gulf War, Saudi Arabia, Pakistan migration.<br>
-            3. Images from Unsplash.com (free-to-use stock images).</p>
-        </div>
+      <div class="overlay fade-in">
+        <h2>Sources</h2>
+        <p>1. Interview with Ayesha Sheikh conducted by Aisha Sheik.<br>
+          2. Historical context: Gulf War, Saudi Arabia, Pakistan migration.<br>
+          3. Images from Unsplash.com (free-to-use stock images).</p>
+      </div>
     </section>
-</main>
+  </main>
 
-<footer>
+  <footer>
     <p>&copy; 2025 Life Story Project | Created by Aisha Sheik</p>
-</footer>
-
-<script>
-    // Fade-in animation on scroll
-    const faders = document.querySelectorAll('.fade-in');
-
-    const appearOptions = {
-        threshold: 0.3,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-        entries.forEach(entry => {
-            if(!entry.isIntersecting){
-                return;
-            } else {
-                entry.target.classList.add('appear');
-                appearOnScroll.unobserve(entry.target);
-            }
-        });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-        appearOnScroll.observe(fader);
-    });
-</script>
-
+  </footer>
+</div>
 </body>
 </html>
-
-
