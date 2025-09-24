@@ -11,10 +11,33 @@
   #content {display:none;}
 </style>
 <script>
+  function setupFadeIn() {
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.3,
+      rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting){
+          return;
+        } else {
+          entry.target.classList.add('appear');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  }
+
   function askPassword() {
     let pwd = prompt("Please enter the password:");
     if (pwd ==="password123") {
       document.getElementById("content").style.display = "block";
+      setupFadeIn();
     } else {
       alert("Incorrect password. Access denied.");
       window.location.href = "https://github.com"; // Redirect if wrong
@@ -77,5 +100,8 @@
     <p>&copy; 2025 Life Story Project | Created by Aisha Sheik</p>
   </footer>
 </div>
+<script>
+// If password protection is removed, you can call setupFadeIn() directly here
+</script>
 </body>
 </html>
